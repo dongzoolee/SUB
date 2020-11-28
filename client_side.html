@@ -115,7 +115,7 @@
             seperate(received, function (line, stat) {
                 if ($.trim(line + stat) == "") { alert("값입력해"); return false; }
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'NODEJS_SERVER_ADDRESS?stat=' + encodeURIComponent(stat));
+                xhr.open('GET', 'NODEJS_SERVER_ADDRESS/sub?stat=' + encodeURIComponent(stat));
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 console.log('보냈습니다')
                 xhr.onload = function () {
