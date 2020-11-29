@@ -6,7 +6,7 @@ https://leed.at/sub
 # 0. Before We Start
 Your web-site will probably be SSL protected site.  
 But Seoul Subway API is provided with http site.  
-We cannot 'https' cannot request data from 'http'(viceversa), because of CORS policy.  
+'https' cannot request data from 'http'(viceversa), because of CORS policy.  
 Let's solve the problem with node.JS  
 
 # 1. Client_side.html
