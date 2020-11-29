@@ -78,4 +78,6 @@ app.use('/sub', (req, res) => {
 ```
 Send response of GET to client with 
 
-  res.end($.html());
+      res.end($.html());
+  
+  
