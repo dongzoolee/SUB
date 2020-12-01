@@ -1,7 +1,5 @@
 var express = require('express');
 var app = express();
-var cors=require('cors');
-app.use(cors());
 var client = require('cheerio-httpcli');
 var https = require('https');
 var fs=require('fs');
@@ -26,6 +24,7 @@ app.use('/sub', (req, res) => {
     console.log(url)
     client.fetch(url, {}, (err, $, result) => {
         console.log($.html());
+        res.header("Access-Control-Allow-Origin", "YOUR_SITE");
         res.end($.html());
     })
 })
