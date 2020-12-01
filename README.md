@@ -72,6 +72,7 @@ app.use('/sub', (req, res) => {
     console.log(url)
     client.fetch(url, {}, (err, $, result) => {
         console.log($.html());
+        res.header("Access-Control-Allow-Origin", "YOUR_SITE");
         res.end($.html());
     })
 })
